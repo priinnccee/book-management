@@ -19,10 +19,10 @@ book-management/
     ├── includes/
     │   ├── header.php
     │   └── footer.php
-    ├── functions/
-    │   ├── BookFunction.php
-    │   ├── AdminFunction.php
-    │   └── CategoryFunction.php
+    ├── services/
+    │   ├── BookService.php
+    │   ├── AdminService.php
+    │   └── CategoryService.php
     ├── models/
     │   ├── BookModel.php
     │   ├── AdminModel.php
@@ -48,29 +48,29 @@ book-management/
 
 ```bash
 
-mkdir -p library-management/{public/assets/{css,js,images},app/{config,includes,functions,models,admin,books,categories}} && \
-touch library-management/public/index.php && \
-touch library-management/public/assets/css/style.css && \
-touch library-management/public/assets/js/script.js && \
-touch library-management/app/config/db.php && \
-touch library-management/app/includes/header.php && \
-touch library-management/app/includes/footer.php && \
-touch library-management/app/functions/BookFunction.php && \
-touch library-management/app/functions/AdminFunction.php && \
-touch library-management/app/functions/CategoryFunction.php && \
-touch library-management/app/models/BookModel.php && \
-touch library-management/app/models/AdminModel.php && \
-touch library-management/app/models/CategoryModel.php && \
-touch library-management/app/admin/login.php && \
-touch library-management/app/admin/dashboard.php && \
-touch library-management/app/books/index.php && \
-touch library-management/app/books/create.php && \
-touch library-management/app/books/edit.php && \
-touch library-management/app/books/delete.php && \
-touch library-management/app/categories/index.php && \
-touch library-management/app/categories/create.php && \
-touch library-management/app/categories/edit.php && \
-touch library-management/app/categories/delete.php
+mkdir -p book-management/{public/assets/{css,js,images},app/{config,includes,services,models,admin,books,categories}} && \
+touch book-management/public/index.php && \
+touch book-management/public/assets/css/style.css && \
+touch book-management/public/assets/js/script.js && \
+touch book-management/app/config/db.php && \
+touch book-management/app/includes/header.php && \
+touch book-management/app/includes/footer.php && \
+touch book-management/app/services/BookService.php && \
+touch book-management/app/services/AdminService.php && \
+touch book-management/app/services/CategoryService.php && \
+touch book-management/app/models/BookModel.php && \
+touch book-management/app/models/AdminModel.php && \
+touch book-management/app/models/CategoryModel.php && \
+touch book-management/app/admin/login.php && \
+touch book-management/app/admin/dashboard.php && \
+touch book-management/app/books/index.php && \
+touch book-management/app/books/create.php && \
+touch book-management/app/books/edit.php && \
+touch book-management/app/books/delete.php && \
+touch book-management/app/categories/index.php && \
+touch book-management/app/categories/create.php && \
+touch book-management/app/categories/edit.php && \
+touch book-management/app/categories/delete.php
 
 
 ```
