@@ -2,7 +2,7 @@
 
 ## Folder Structure
 
-```plaintext
+```bash
 
 book-management/
 │
@@ -46,7 +46,7 @@ book-management/
 
 ## Command to Create Folder Structure
 
-```plaintext
+```bash
 
 mkdir -p library-management/{public/assets/{css,js,images},app/{config,includes,functions,models,admin,books,categories}} && \
 touch library-management/public/index.php && \
