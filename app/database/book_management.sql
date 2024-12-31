@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS admins (
 
 -- Insert a default admin
 INSERT INTO admins (username, password) VALUES 
-('admin', 'adminpassword');
+('bookmanager', 'password');
 
 -- Create table for Categories
 CREATE TABLE IF NOT EXISTS categories (

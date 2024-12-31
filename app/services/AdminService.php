@@ -11,10 +11,11 @@ class AdminService {
     public function login($username, $password) {
         $admin = $this->adminModel->findAdminByUsername($username);
 
-        if ($admin && password_verify($password, $admin['password'])) {
-            return true;
+        if ($admin && $password === $admin['password']) {
+            return true; 
         }
 
-        return false;
+        return false; 
     }
 }
+?>
