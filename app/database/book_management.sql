@@ -15,18 +15,6 @@ CREATE TABLE IF NOT EXISTS admins (
 INSERT INTO admins (username, password) VALUES 
 ('admin', 'adminpassword');
 
--- Create table for Books
-CREATE TABLE IF NOT EXISTS books (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(100) NOT NULL,
-    author VARCHAR(100) NOT NULL,
-    category_id INT NOT NULL,
-    published_year INT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
-);
-
 -- Create table for Categories
 CREATE TABLE IF NOT EXISTS categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -42,3 +30,17 @@ INSERT INTO categories (name) VALUES
 ('Science'),
 ('History'),
 ('Biography');
+
+-- Create table for Books
+CREATE TABLE IF NOT EXISTS books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(100) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    category_id INT NOT NULL,
+    published_year INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
+);
+
+
